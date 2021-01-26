@@ -1,0 +1,43 @@
+<section class="hero is-medium">
+  <h1 class="has-text-centered is-size-1 has-text-weight-bold">
+    Events
+  </h1>
+  <div class="hero-body vision">
+    <div class="container  has-text-centered">
+        <div class="content ">
+            ASME Engineering Festivals™ (or E-Fests) are regional events for engineering students that include design competitions, career development workshops, access to thought leaders and innovators in various engineering fields, and networking opportunities. E-Fests also extend beyond the in-person events and provide online content, resources and a community that enables students to foster innovation, network with key players in the industry, connect with peers and celebrate engineering.  
+E-Fests offer competitions such as HPVC(Human Powered Vehicle Competition), SDC (Student Design Competition), IAM3D (Innovation Additive Manufacturing 3D), Aeromania (RC Plane competition) during the annual E-Fests. It also conducts seminars, workshops and networking lunches during the fest. 
+
+        </div>
+
+
+        <div class="columns is-centered is-multiline">
+            
+           
+
+            <div class="column is-half" *ngFor="let event of events">
+                <div class="courses-container">
+                    <div class="course">
+                        <div class="course-preview">
+                            <h6>Event #{{event.no}}</h6>
+                            <h2>{{event.name}}</h2>
+                            <!-- <a href="#">View all chapters <i class="fas fa-chevron-right"></i></a> -->
+                        </div>
+                        <div class="course-info">
+                            <div class="progress-container">
+                                <!-- <div class="progress"></div> -->
+                                
+                            </div>
+                            <h6>Detials</h6>
+                            <h2 class="is-size-6-mobile">{{event.content}}</h2>
+                            <!-- <button class="btn">Click</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+  </div>
+  </div>
+</section>
