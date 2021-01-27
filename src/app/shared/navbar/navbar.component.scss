@@ -12,7 +12,7 @@
 .item{
     
     // border-bottom-width: 3px;
-    padding-bottom: 0.5rem !important;
+    padding-bottom: 0.1rem !important;
     &:hover{
         border-bottom: 3px solid#4c29ff;
     }
@@ -21,6 +21,19 @@
     
     // border-bottom-width: 3px;
     padding-bottom: 0.5rem;
+}
+.hero-foot{
+    filter: drop-shadow(0px 0px 2px #919191);
+    border-radius: 30px 30px 0px 0px;
+    margin:0 5% 0 5% ;
+    background: white;
+    a{
+        color: #4c29ff;
+    }
+    a:hover{
+        background-color: #4c29ff;
+        color: white;
+    }
 }
 #stripes{
     width:100%;

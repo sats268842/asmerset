@@ -12,32 +12,53 @@ E-Fests offer competitions such as HPVC(Human Powered Vehicle Competition), SDC 
 
 
         <div class="columns is-centered is-multiline">
-            
-           
+     
+          
+            <div class="column is-one-third" *ngFor="let event of events">
+                <h1 class="is-size-1 has-text-weight-bold">
+                    #{{event.no}} <span class="is-size-4 has-text-dark has-text-weight-normal">({{event.name}})</span> 
 
-            <div class="column is-half" *ngFor="let event of events">
-                <div class="courses-container">
-                    <div class="course">
-                        <div class="course-preview">
-                            <h6>Event #{{event.no}}</h6>
-                            <h2>{{event.name}}</h2>
-                            <!-- <a href="#">View all chapters <i class="fas fa-chevron-right"></i></a> -->
-                        </div>
-                        <div class="course-info">
-                            <div class="progress-container">
-                                <!-- <div class="progress"></div> -->
-                                
-                            </div>
-                            <h6>Detials</h6>
-                            <h2 class="is-size-6-mobile">{{event.content}}</h2>
-                            <!-- <button class="btn">Click</button> -->
-                        </div>
+                </h1>
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="../../assets/events/IMG_2034.JPG" alt="Placeholder image">
+                      </figure>
                     </div>
-                </div>
+                   
+                  
+                  
+                   
             </div>
+            <div class="pt-5">
+                <h2 class="is-size-6-mobile">{{event.content}}</h2> 
+          
+          </div>
+        
 
         </div>
     
   </div>
   </div>
+  </div>
 </section>
+
+
+<!-- <div class="courses-container">
+    <div class="course">
+        <div class="course-preview">
+            <h6>Event #{{event.no}}</h6>
+            <h2>{{event.name}}</h2> -->
+            <!-- <a href="#">View all chapters <i class="fas fa-chevron-right"></i></a> -->
+        <!-- </div>
+        <div class="course-info">
+            <div class="progress-container"> -->
+                <!-- <div class="progress"></div> -->
+                
+            <!-- </div>
+            <h6>Detials</h6>
+            <h2 class="is-size-6-mobile">{{event.content}}</h2> -->
+            <!-- <button class="btn">Click</button> -->
+        <!-- </div>
+    </div>
+</div> -->

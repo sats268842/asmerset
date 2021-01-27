@@ -1,11 +1,14 @@
 .footer{
     background-color: white;
-    border-radius: 5px;
-    margin: 1%;
+    border-radius: 0px 60px 0px 0px ;
+    margin: 0 0 1%;
     // background: #e0e0e0;
-    box-shadow: 2px2px 58px #dedede,
-                 -29px -29px 58px #e2e2e2;
+    box-shadow:  5px 5px 10px #3d3d3d;
+    transform: skewY(-2deg);
 }
 .social{
     display: inline;
+}
+i{
+    color: #4c29ff;
 }
