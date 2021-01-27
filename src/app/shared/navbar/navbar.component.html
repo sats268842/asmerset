@@ -4,13 +4,13 @@
         <a class="navbar-item">
           <img src="../../../assets/rset.png" class="image" alt="Logo">
         </a>
-        <span class="navbar-burger" data-target="navbarMenuHeroB">
+        <span class="navbar-burger" [class.is-active]="toogle" (click)="navbar()"  data-target="navbarMenuHeroB">
           <span></span>
           <span></span>
           <span></span>
         </span>
       </div>
-      <div id="navbarMenuHeroB" class="navbar-menu">
+      <div id="navbarMenuHeroB" class="navbar-menu" [class.is-active]="toogle">
         <div class="navbar-end">
           <a href="#" class="navbar-item item is-active">
             Home
